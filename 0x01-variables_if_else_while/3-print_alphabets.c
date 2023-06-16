@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
 /**
@@ -23,7 +24,7 @@ int main(void)
 		i++;
 	}
 
-	while (j < 90)
+	while (i <= 90)
 	{
 		putchar(j);
 		j++;
