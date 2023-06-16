@@ -15,10 +15,10 @@ int main(void)
 	number1 = 48;
 	number2 = 48;
 
-	while(number1 < 58)
+	while (number1 < 58)
 	{
 		number2 = number1 + 1;
-		while(number2 < 58)
+		while (number2 < 58)
 		{
 			putchar(number1);
 			putchar(number2);
