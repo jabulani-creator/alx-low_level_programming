@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - print pairs of double digit combos
+ * main - Entry point
  *
- * Description: prints all the combinations of two two-digits numbers. 
+ * Description: prints all possible different combinations of two digits.
  *
- * Return: Always 0 (Success)
- */
+ * Return: Always O (Success)
+*/
 
 int main(void)
 {
