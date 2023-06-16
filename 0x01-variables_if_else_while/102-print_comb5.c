@@ -3,7 +3,7 @@
 /**
  * main - print pairs of double digit combos
  *
- * Description: print all combinations of two two-digits numbers. 
+ * Description: prints all the combinations of two two-digits numbers. 
  *
  * Return: Always 0 (Success)
  */
