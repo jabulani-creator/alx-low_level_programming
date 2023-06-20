@@ -22,9 +22,8 @@ int main(void)
 		if (number1 % 2 == 0)
 			sum += number1;
 
-		printf("%lu\n", sum);
-		number3++;
 	}
+	printf("%lu\n", sum);
 
 	return (0);
 }
