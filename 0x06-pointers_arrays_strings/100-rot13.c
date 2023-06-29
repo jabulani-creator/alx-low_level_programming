@@ -12,15 +12,21 @@
 
 char *rot13(char *str)
 {
-	int count = 0;
+	int i, j;
 
-	while (str[count] != '\0')
+	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[count] >= 65 && str[count] <= 90)
-			str[count] = ((str[count] - 65 + 13) % 26) + 65;
-		else if (str[count] >= 97 && str[count] <= 123)
-			str[count] = ((str[count] - 97 + 13) % 26) + 97;
-		count++;
+		for (j = 0; a[j] != '\0'; j++)
+		{
+			if (str[i] == a[j])
+			{
+				str[i] = b[j];
+				break;
+			}
+		}
 	}
 
 	return (str);
